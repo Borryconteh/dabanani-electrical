@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  --color-dabanani-yellow: #FFD700;
+  --color-dabanani-yellow-hover: #e6c200;
+  --color-dabanani-red: #C8102E;
+  --color-dabanani-green: #006400;
+  --color-deep-navy: #1e293b;
+  --color-deep-navy-light: #334155;
+  --color-cream: #f8fafc;
+}
+
+/* Smooth scrolling (disabled for users who prefer reduced motion, see below) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--color-cream);
+  color: var(--color-deep-navy);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Accessible keyboard focus visible everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-dabanani-yellow);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Mobile-First Spacing */
+section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Large Screens (Monitors & TVs) */
+@media (min-width: 1280px) {
+  .max-w-7xl {
+    max-width: 1400px !important;
+  }
+
+  h1 {
+    font-size: 4.5rem !important;
+  }
+}
+
+/* Card Hover Effect */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Mobile Carousel (Projects, Team, Services) */
+@media (max-width: 767px) {
+  .carousel-container {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 1rem;
+    margin: 0 -1rem;
+    padding: 0.25rem 1rem 1.5rem;
+  }
+
+  .carousel-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-card {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    width: 86%;
+  }
+}
+
+/* Navbar mobile menu improvements */
+@media (max-width: 1023px) {
+  .mobile-menu {
+    animation: slideDown 0.3s ease forwards;
+  }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Final Polish */
+.hero-text {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.card {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+@media (max-width: 640px) {
+  .hero-text {
+    font-size: 2.25rem !important;
+  }
+}
