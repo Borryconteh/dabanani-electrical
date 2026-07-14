@@ -23,7 +23,7 @@ export default function Contact() {
                   <Phone className="w-6 h-6 text-blue-400 mt-1" />
                   <div>
                     <p className="font-medium">Phone</p>
-                    <p className="text-gray-400">+220 437 7304 / 229 0222 / 394 3176</p>
+                    <p className="text-gray-400">+220 953 7401 / 229 0222 / 530 2032</p>
                   </div>
                 </div>
 
@@ -51,7 +51,7 @@ export default function Contact() {
 
             {/* Single WhatsApp Button */}
             <a 
-              href="https://wa.me/2204377304" 
+              href="https://wa.me/2205302032" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl font-semibold transition-colors w-full lg:w-auto justify-center"

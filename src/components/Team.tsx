@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-type Department = "Secretary" | "Administration" | "Finance" | "IT & Systems" | "Engineering" | "Surveying";
+type Department = "Secretary" | "Administration" | "Finance" | "IT & Systems" | "Procurement" | "Engineering" | "Surveying";
 
 // Pick whichever preset is closest to the photo's own shape — no manual
 // cropping needed, the aspect-ratio box does the fitting per-person.
@@ -50,28 +50,26 @@ const teamMembers: TeamMember[] = [
     name: "Mam Fatou Demba",
     position: "Secretary",
     department: "Secretary",
-    experience: "—",
-    qualification: "—",
+    experience: "12 Years",
+    qualification: "HND",
     image: "/images/team/mamfatou.jpeg",
     photoAspect: "wide",
-    isPlaceholder: true,
   },
   {
     name: "Khalid Camara",
     position: "Administrative Officer",
     department: "Administration",
-    experience: "—",
-    qualification: "—",
+    experience: "3 Years",
+    qualification: "BSC",
     image: "/images/team/Khalid.jpeg",
     photoAspect: "wide",
-    isPlaceholder: true,
   },
   {
     name: "Awa Conteh",
     position: "Assistant Admin",
     department: "Administration",
-    experience: "—",
-    qualification: "—",
+    experience: "5 Years",
+    qualification: "HND",
     image: "/images/team/awaconteh.jpeg",
     photoAspect: "wide",
   },
@@ -81,7 +79,7 @@ const teamMembers: TeamMember[] = [
     department: "Finance",
     experience: "15 Years",
     qualification: "BSc",
-    image: "/images/team/madambarry.jpeg",
+    image: "/images/team/madam.jpeg",
     photoAspect: "wide",
     
   },
@@ -89,7 +87,7 @@ const teamMembers: TeamMember[] = [
     name: "Salifu Conteh",
     position: "Assistant Finance ",
     department: "Finance",
-    experience: "15 Years",
+    experience: "15+ Years",
     qualification: "BSc",
    // image: "/images/team/madambarry.jpeg",
     photoAspect: "portrait",
@@ -99,9 +97,11 @@ const teamMembers: TeamMember[] = [
     name: "Yunusa Conteh",
     position: "System Administrator",
     department: "IT & Systems",
-    experience: "—",
-    qualification: "—",
-    isPlaceholder: true,
+    experience: "3+ Years",
+    qualification: "Diploma in Information Technology ",
+    image: "/images/team/yunusa.jpeg",
+    photoAspect: "square",
+
   },
   {
     name: "Dawda Bojang",
@@ -110,6 +110,7 @@ const teamMembers: TeamMember[] = [
     experience: "5 Years",
     qualification: "B-Tech (Electrical Engineering), Minor in Economics",
     image: "/images/team/dawda.jpeg"
+    
   },
   {
     name: "Pa Foday Khan",
@@ -119,6 +120,22 @@ const teamMembers: TeamMember[] = [
     qualification: "BSc, HND",
     image: "/images/team/pakhan.jpeg"
   },
+  {
+    name: "Mariama Saidybah",
+    position: "Procurement Officer",
+    department: "Procurement",
+    experience: "10 Years",
+    qualification: "HND,",
+    image: "/images/team/Saidybah.jpeg"
+  },
+  {
+    name: "Buba Darboe",
+    position: "Surveyor",
+    department: "Surveying",
+    experience: "10 Years",
+    qualification: "HND,",
+    image: "/images/team/......jpeg"
+  },
  
 ];
 
@@ -127,6 +144,7 @@ const departmentStyles: Record<Department, string> = {
   Administration: "bg-deep-navy/10 text-deep-navy",
   Finance: "bg-dabanani-green/10 text-dabanani-green",
   "IT & Systems": "bg-dabanani-red/10 text-dabanani-red",
+  Procurement: "bg-dabanani-blue/10 text-dabanani-blue",
   Engineering: "bg-gray-200 text-gray-700",
   Surveying: "bg-dabanani-yellow/30 text-dabanani-red",
 };
@@ -247,7 +265,7 @@ export default function Team() {
                 </h3>
                 <p className="text-dabanani-red font-medium mt-1">{member.position}</p>
 
-                <div className="mt-4 pt-4 border-t border-gray-100 text-sm text-gray-600 space-y-1 mt-auto">
+                <div className="mt-4 pt-4 border-t border-gray-100 text-sm text-gray-600 space-y-1 'mt-4'">
                   <p><span className="font-medium">Experience:</span> {member.experience}</p>
                   <p><span className="font-medium">Qualification:</span> {member.qualification}</p>
                 </div>

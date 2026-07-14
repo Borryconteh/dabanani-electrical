@@ -73,11 +73,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-gray-400 text-sm">
                 <Phone className="w-5 h-5 text-dabanani-yellow shrink-0" aria-hidden="true" />
-                <span>+220 4377304 / 2290222</span>
+                <span>+220 953 7401 / 530 2032 </span>
               </li>
               <li className="flex items-center gap-3 text-gray-400 text-sm">
                 <Mail className="w-5 h-5 text-dabanani-yellow shrink-0" aria-hidden="true" />
-                <a href="mailto:aefconteh@gmail.com" className="hover:text-white transition-colors">aefconteh@gmail.com</a>
+                <a href="mailto:admin@dabanani-electrical.com" className="hover:text-white transition-colors">admin@dabanani-electrical.com</a>
               </li>
             </ul>
           </div>

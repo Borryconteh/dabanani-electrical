@@ -24,14 +24,13 @@ export default function Hero() {
               <span className="uppercase tracking-widest text-sm font-medium">NAWEC Category A Contractor • Since 2001</span>
             </div>
 
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-none tracking-tighter text-white">
-              Reliable Power.<br />
-              <span className="text-amber-400">Brighter Future.</span>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-none tracking-tighter text-white">
+              Empowering Communities,<br />
+              <span className="text-amber-400">Advancing Sustainability.</span>
             </h1>
 
             <p className="text-lg text-gray-100 max-w-lg">
-              Dabanani Electrical Company Ltd delivers professional electrical solutions,
-              solar systems, and infrastructure projects across The Gambia.
+              Dabanani Electrical Company Ltd is one of The Gambia’s leading electrical engineering, power consulting, and contracting firms. Since our establishment in April 2001.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -44,11 +43,11 @@ export default function Hero() {
               </a>
 
               <a
-                href="tel:+2204377304"
+                href="tel:+2209537401"
                 className="inline-flex items-center justify-center gap-3 border border-white/60 hover:border-white text-white px-8 py-4 rounded-2xl font-semibold transition-all"
               >
                 <Phone className="w-5 h-5" aria-hidden="true" />
-                +220 437 7304
+                +220 953 7401
               </a>
             </div>
           </div>

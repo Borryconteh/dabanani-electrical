@@ -46,7 +46,7 @@ export default function Navbar() {
             ))}
 
             <a
-              href="tel:+2204377304"
+              href="tel:+2205302032"
               className="flex items-center gap-2 bg-dabanani-green text-white px-6 py-3 rounded-2xl hover:bg-dabanani-green/90 transition-all font-medium"
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
