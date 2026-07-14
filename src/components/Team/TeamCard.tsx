@@ -1,7 +1,7 @@
 // src/components/Team/TeamCard.tsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TeamMember } from './types';
+import type { TeamMember } from './types';
 import Photo from './Photo';
 
 interface TeamCardProps {

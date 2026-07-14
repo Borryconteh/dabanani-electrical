@@ -1,7 +1,7 @@
 // src/components/Team/LeadershipCarousel.tsx
 import React, { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { TeamMember } from './types';
+import type { TeamMember } from './types';
 import TeamCard from './TeamCard';
 
 interface LeadershipCarouselProps {

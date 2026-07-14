@@ -14,17 +14,17 @@ const TreeNode: React.FC<{ node: OrganizationNode; isRoot?: boolean }> = ({ node
         viewport={{ once: true, margin: "-50px" }}
         whileHover={{ scale: 1.05, y: -5 }}
         transition={{ duration: 0.4 }}
-        className={`relative z-10 px-6 py-4 rounded-xl border-2 shadow-sm bg-white min-w-[160px] flex flex-col items-center justify-center transition-shadow hover:shadow-lg
+        className={`relative z-10 px-6 py-4 rounded-xl border-2 shadow-sm bg-white min-w-40 flex flex-col items-center justify-center transition-shadow hover:shadow-lg
           ${isRoot ? 'border-red-600 shadow-red-100/50' : 'border-slate-200 hover:border-red-300'}
         `}
       >
         <h4 className={`font-bold text-center text-sm md:text-base ${isRoot ? 'text-red-600' : 'text-slate-900'}`}>
-          {node.name}
+          {node.title}
         </h4>
         <p className="text-[10px] md:text-xs text-center text-slate-500 uppercase tracking-wider mt-1 font-medium">
-          {node.position}
+          {node.department}
         </p>
-        {node.department && node.department !== node.position && (
+        {node.department && (
           <p className="text-[10px] md:text-xs text-center text-slate-500 mt-1">
             {node.department}
           </p>

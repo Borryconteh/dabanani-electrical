@@ -1,5 +1,5 @@
 // src/components/Team/teamData.ts
-import { TeamMember, OrganizationNode } from './types';
+import type { TeamMember, OrganizationNode } from './types';
 
 // Placeholder image (replace with actual paths like '/images/team/john.jpg' later)
 const placeholderImg = 'https://ui-avatars.com/api/?background=random&size=400';
